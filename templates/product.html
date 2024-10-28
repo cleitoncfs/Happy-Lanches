@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Detalhes do Produto{% endblock %}
+
+{% block content %}
+<div class="product-details-page">
+    <div class="product-container">
+        <h2 class="product-title">{{ produto.nome }}</h2>
+        
+        <div class="product-content"> <!-- Contêiner para imagem e informações -->
+            <div class="product-image">
+                <img src="{{ url_for('static', filename=produto.imagem) }}" alt="{{ produto.nome }}">
+            </div>
+
+            <div class="product-info-container">
+                <div class="product-details">
+                    <h3>Ingredientes:</h3>
+                    <p>{{ produto.ingredientes }}</p>
+                    <h3>Nutri-Score:</h3>
+                    <p>{{ produto.nutri_score }}</p>
+                    <h3>Categoria:</h3>
+                    <p>{{ produto.categoria }}</p>
+                </div>
+
+                <div class="product-nutrition">
+                    <h3>Informação Nutricional:</h3>
+                    <table>
+                        <tr><td>Calorias:</td><td>{{ produto.informacao_nutricional.calorias }}</td></tr>
+                        <tr><td>Carboidratos:</td><td>{{ produto.informacao_nutricional.Carboidratos }}</td></tr>
+                        <tr><td>Proteínas:</td><td>{{ produto.informacao_nutricional.Proteínas }}</td></tr>
+                        <tr><td>Gorduras Totais:</td><td>{{ produto.informacao_nutricional['Gorduras Totais'] }}</td></tr>
+                        <tr><td>Fibras:</td><td>{{ produto.informacao_nutricional.Fibras }}</td></tr>
+                        <tr><td>Sódio:</td><td>{{ produto.informacao_nutricional.Sódio }}</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-back">
+            <a href="{{ url_for('homepage') }}">Voltar</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

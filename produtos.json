@@ -1,0 +1,115 @@
+[
+    {
+        "id": 1,
+        "nome": "Coxinha de frango com catupiry",
+        "imagem": "img/coxinha.jpg",
+        "categoria": "Salgados, petiscos de bar",
+        "nutri_score": "N/A",
+        "ingredientes": "manteiga, óleo, leite, ovo, trigo, fermento, especiarias",
+        "informacao_nutricional": {
+            "calorias": "147.61 kcal.",
+            "Carboidratos": "8,16 g.",
+            "Proteínas": "7,09 g.",
+            "Gorduras Totais": "10,76 g.",
+            "Fibras": "0,31 g.",
+            "Sódio": "158,57 mg."
+        }
+    },
+    
+    {
+        "id": 2,
+        "nome": "Pastel frito na hora",
+        "imagem": "img/pastel.jpg",
+        "categoria": "Salgados, petiscos de bar",
+        "nutri_score": "N/A",
+        "ingredientes": "farinha de trigo, manteiga, óleo de soja, sal, cachaça, carne bovina ou queijo, especiarías",
+        "informacao_nutricional": {
+            "calorias": "412 kcal.",
+            "Carboidratos": "45 g.",
+            "Proteínas": "9,41 g.",
+            "Gorduras Totais": "21,4 g.",
+            "Fibras": "0,97 g.",
+            "Sódio": "930 mg."
+        }
+    },
+    {
+        "id": 3,
+        "nome": "Hamburger Artesanal ",
+        "imagem": "img/hamburger-artesanal.jpg",
+        "categoria": "Lanches e sanduiches",
+        "nutri_score": "N/A",
+        "ingredientes": "carne bovina, ovo, bacon moído, farinha de trigo, especiarías",
+        "informacao_nutricional": {
+            "calorias": "154 kcal.",
+            "Carboidratos": "2,41 g.",
+            "Proteínas": "20,45 g.",
+            "Gorduras Totais": "6,35 g.",
+            "Fibras": "0,2 g.",
+            "Sódio": "311 mg."
+        }
+    },
+    {
+        "id": 4,
+        "nome": "Pizza Moda da Casa",
+        "imagem": "img/pizza.png",
+        "categoria": "Massas, comida italiana",
+        "nutri_score": "N/A",
+        "ingredientes": "Massa fresca, molho de tomate, queijo mozarela, frango e milho, bacon, ovo e queijo catupiry",
+        "informacao_nutricional": {
+            "calorias": "800 kcal.",
+            "Carboidratos": "20 g.",
+            "Proteínas": "20 g.",
+            "Gorduras Totais": "20 g.",
+            "Fibras": "N/A",
+            "Sódio": "N/A"
+        }
+    },
+    {
+        "id": 5,
+        "nome": "Mousse de morango",
+        "imagem": "img/mousse.png",
+        "categoria": "Doces e sobremesas",
+        "nutri_score": "N/A",
+        "ingredientes": "Leite, creme de leite, leite condensado, suco em pó de morango, morango.",
+        "informacao_nutricional": {
+            "calorias": "389 kcal.",
+            "Carboidratos": "12 g.",
+            "Proteínas": "1,30 g.",
+            "Gorduras Totais": "4,30 g.",
+            "Fibras": "N/A",
+            "Sódio": "N/A"
+        }
+    },
+    {
+        "id": 6,
+        "nome": "Suco de laranja",
+        "imagem": "img/suco-de-laranja.jpg",
+        "categoria": "Bebidas, suco natural",
+        "nutri_score": "N/A",
+        "ingredientes": "Agua, sumo de laranja, sumo de limão, raspas de casca de laranja, açucar. ",
+        "informacao_nutricional": {
+            "calorias": "45 kcal.",
+            "Carboidratos": "10 g.",
+            "Proteínas": "0,7 g.",
+            "Gorduras Totais": "0,2 g.",
+            "Fibras": "N/A",
+            "Sódio": "1 mg"
+        }
+    },
+    {
+        "id": 7,
+        "nome": "Limonada Suiça Cremosa",
+        "imagem": "img/limonada.jpg",
+        "categoria": "Bebidas, suco natural",
+        "nutri_score": "N/A",
+        "ingredientes": "Agua, limão, casca de limão, leite condensado, açucar, hortelã",
+        "informacao_nutricional": {
+            "calorias": "368 kcal.",
+            "Carboidratos": "22 g.",
+            "Proteínas": "0,0 g.",
+            "Gorduras Totais": "0,0 g.",
+            "Fibras": "0,0",
+            "Sódio": "6 mg"
+        }
+    }
+]

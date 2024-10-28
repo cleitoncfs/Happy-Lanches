@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block title %}Página Inicial - Happy Lanches{% endblock %}
+
+{% block content %}
+
+<div class="container">  
+    <h1>Nossos Produtos</h1>
+    <div class="card-produto">
+        <div class="container-imagem">
+            <img src="{{ url_for('static', filename='img/coxinha.jpg') }}" alt="Coxinha de frango com catupiry">
+        </div>
+        <div class="container-info">
+            <h3>Coxinha de frango com catupiry</h3>
+            <p>Categoria: Salgados, petiscos de bar</p>
+            <p>Nutri-Score: N/A </p>
+            <div class="container-preco">
+                <a href="{{ url_for('product', produto_id=1) }}">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-produto">
+        <div class="container-imagem">
+            <img src="{{ url_for('static', filename='img/pastel.jpg') }}" alt="Pastel frito na hora">
+        </div>
+        <div class="container-info">
+            <h3>Pastel frito na hora</h3>
+            <p>Categoria: Salgados, petiscos de bar</p>
+            <p>Nutri-Score: N/A</p>
+            <div class="container-preco">
+                <a href="{{ url_for('product', produto_id=2) }}">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-produto">
+        <div class="container-imagem">
+            <img src="{{ url_for('static', filename='img/hamburger-artesanal.jpg') }}" alt="Hamburger Artesanal">
+        </div>
+        <div class="container-info">
+            <h3>Hamburger Artesanal</h3>
+            <p>Categoria: Lanches e sanduiches</p>
+            <p>Nutri-Score: N/A </p>
+            <div class="container-preco">
+                <a href="{{ url_for('product', produto_id=3) }}">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-produto">
+        <div class="container-imagem">
+            <img src="{{ url_for('static', filename='img/pizza.png') }}" alt="Pizza Moda da Casa">
+        </div>
+        <div class="container-info">
+            <h3>Pizza Moda da Casa</h3>
+            <p>Categoria: Massas, comida italiana</p>
+            <p>Nutri-Score: N/A </p>
+            <div class="container-preco">
+                <a href="{{ url_for('product', produto_id=4) }}">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-produto">
+        <div class="container-imagem">
+            <img src="{{ url_for('static', filename='img/mousse.png') }}" alt="Mousse de morango">
+        </div>
+        <div class="container-info">
+            <h3>Mousse de morango</h3>
+            <p>Categoria: Doces e sobremesas</p>
+            <p>Nutri-Score: N/A </p>
+            <div class="container-preco">
+                <a href="{{ url_for('product', produto_id=5) }}">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-produto">
+        <div class="container-imagem">
+            <img src="{{ url_for('static', filename='img/suco-de-laranja.jpg') }}" alt="Suco de laranja">
+        </div>
+        <div class="container-info">
+            <h3>Suco de laranja</h3>
+            <p>Categoria: Bebidas, suco natural</p>
+            <p>Nutri-Score: N/A</p>
+            <div class="container-preco">
+                <a href="{{ url_for('product', produto_id=6) }}">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-produto">
+        <div class="container-imagem">
+            <img src="{{ url_for('static', filename='img/limonada.jpg') }}" alt="Pastel frito na hora">
+        </div>
+        <div class="container-info">
+            <h3>Limonada Suiça Cremosa</h3>
+            <p>Categoria: Bebidas, suco natural</p>
+            <p>Nutri-Score: N/A</p>
+            <div class="container-preco">
+                <a href="{{ url_for('product', produto_id=7) }}">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Adicione os outros produtos seguindo o mesmo padrão -->
+</div>
+{% endblock %}

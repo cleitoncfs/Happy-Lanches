@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Login - Happy Lanches{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Entrar</button>
+    </form>
+    <p><a href="{{ url_for('forgot_password') }}">Esqueceu sua senha?</a></p>
+    <p><a href="{{ url_for('register') }}">Não tem conta? Cadastre-se</a></p>
+</div>
+{% endblock %}
