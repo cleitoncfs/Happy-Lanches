@@ -534,3 +534,104 @@ form button {
   }
 }
 
+
+.forgot-password-container {
+  width: 1100px;
+  max-width: 1200px;
+  padding: 40px;
+  margin: 40px auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.forgot-password-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.forgot-password-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.forgot-password-container form input,
+.forgot-password-container form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.forgot-password-container form button {
+  padding: 15px;
+  font-size: 18px;
+  background-color: #3cbd87;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.forgot-password-container form button:hover {
+  background-color: #34a576;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+  .forgot-password-container {
+    width: 350px;
+    padding: 20px;
+  }
+
+  .forgot-password-container form {
+    width: 100%;
+    max-width: none;
+  }
+
+  .forgot-password-container form input[type="text"],
+  .forgot-password-container form input[type="email"],
+  .forgot-password-container form textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .forgot-password-container form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+
+
+.flash-messages ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flash-messages li {
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.flash.success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.flash.danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.flash.info {
+  background-color: #2196F3;
+  color: white;
+}
+

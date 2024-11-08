@@ -22,8 +22,16 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="{{ url_for('homepage') }}">Home</a></li>
                 <li><a href="{{ url_for('contact') }}">Contato</a></li>
-                <li><a href="{{ url_for('login') }}">Login</a></li>                
-                <li><a href="{{ url_for('register') }}">Registrar</a></li>
+                
+                {% if 'user' in session %}
+                    <!-- Exibe o link de Logout se o usuário estiver logado -->
+                    <li><a href="{{ url_for('logout') }}">Sair</a></li>
+                {% else %}
+                    <!-- Exibe os links de Login e Registrar se o usuário não estiver logado -->
+                    <li><a href="{{ url_for('login') }}">Login</a></li>                
+                    <li><a href="{{ url_for('register') }}">Registrar</a></li>
+                {% endif %}
+                
             </ul>
         </nav>
     </header>
@@ -41,5 +49,19 @@
     </footer>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <div class="flash-messages">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul>
+                    {% for category, message in messages %}
+                        <li class="flash {{ category }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    </div>
+    
+
 </body>
 </html>

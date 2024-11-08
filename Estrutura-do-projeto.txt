@@ -1,8 +1,10 @@
-/HappyLanches
+/TP5-HappyLanches
 │
 ├── app.py               # Arquivo principal do aplicativo Flask
 ├── produtos.json        # Arquivo JSON contendo os dados dos produtos
+├── README.md
 ├── requirements.txt     # Dependências do projeto
+├── teste.py
 │
 └── templates            # Pasta para templates HTML
     ├── index.html
@@ -13,6 +15,8 @@
     ├── register.html
     └── 404.html         # Página personalizada para erro 404
 │
+└── instance            # Pasta do Banco de Dados
+└── docs                # Arquivos estáticos para deploy no GitHub pages
 └── pap_flask           # Pasta do ambiente virtual
 │
 └── static               # Pasta para arquivos estáticos (CSS, JS, imagens)
