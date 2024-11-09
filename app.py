@@ -3,6 +3,11 @@ import logging
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Carrega as variáveis de ambiente do arquivo .env
+
 
 app = Flask(__name__)
 
@@ -10,7 +15,7 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 
 # Chave secreta para a sessão
-app.config['SECRET_KEY'] = 'ad7ce0eb4eff3eb774dd98d84e4f0da8'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 # Configuração do Banco de Dados SQLite
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'

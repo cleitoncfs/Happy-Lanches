@@ -5,6 +5,8 @@
 ├── README.md            # Arquivo de documentação do projeto, com instruções de uso e informações gerais
 ├── requirements.txt     # Lista de dependências do projeto, necessária para instalar os pacotes com pip
 ├── teste.py             # Arquivo de testes para verificar a funcionalidade do aplicativo
+├── .env                 # hospedagem da chave secreta
+├── Estrutura-do-projeto.txt  # Estrutura do projeto
 │
 └── templates            # Diretório para templates HTML usados pelo Flask
     ├── index.html       # Página inicial do site
