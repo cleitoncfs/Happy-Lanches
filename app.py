@@ -24,7 +24,7 @@ class User(db.Model):
     email = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(150), nullable=False)
     
-# Criação das tabelas no banco de dados (se não existirem)
+# Criação das tabelas no banco de dados
 with app.app_context():
     db.create_all()
 

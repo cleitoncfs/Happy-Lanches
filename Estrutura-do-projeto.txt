@@ -1,31 +1,34 @@
 /TP5-HappyLanches
 │
-├── app.py               # Arquivo principal do aplicativo Flask
-├── produtos.json        # Arquivo JSON contendo os dados dos produtos
-├── README.md
-├── requirements.txt     # Dependências do projeto
-├── teste.py
+├── app.py               # Arquivo principal do aplicativo Flask, onde a aplicação é inicializada e configurada
+├── produtos.json        # Arquivo JSON contendo os dados dos produtos, utilizado para simular um banco de dados
+├── README.md            # Arquivo de documentação do projeto, com instruções de uso e informações gerais
+├── requirements.txt     # Lista de dependências do projeto, necessária para instalar os pacotes com pip
+├── teste.py             # Arquivo de testes para verificar a funcionalidade do aplicativo
 │
-└── templates            # Pasta para templates HTML
-    ├── index.html
-    ├── product.html
-    ├── contact.html
-    ├── forgot-password.html
-    ├── login.html
-    ├── register.html
+└── templates            # Diretório para templates HTML usados pelo Flask
+    ├── index.html       # Página inicial do site
+    ├── product.html     # Página de detalhes de um produto
+    ├── contact.html     # Página de contato
+    ├── forgot-password.html # Página para recuperação de senha
+    ├── login.html       # Página de login
+    ├── register.html    # Página de registro de novos usuários
     └── 404.html         # Página personalizada para erro 404
 │
-└── instance            # Pasta do Banco de Dados
-└── docs                # Arquivos estáticos para deploy no GitHub pages
-└── pap_flask           # Pasta do ambiente virtual
+└── instance             # Diretório para o banco de dados SQLite e outros arquivos específicos da instância
 │
-└── static               # Pasta para arquivos estáticos (CSS, JS, imagens)
+└── docs                 # Diretório para arquivos estáticos usados no deploy do GitHub Pages
+│
+└── pap_flask            # Diretório do ambiente virtual, contendo as dependências instaladas
+│
+└── static               # Diretório para arquivos estáticos (CSS, JS, imagens)
     └── css
-        └── style.css
+        └── style.css    # Arquivo de estilos CSS
     └── js
-        └── script.js
-└── img                  # Pasta para imagens
-    ├── img1.jpg
-    ├── img2.jpg
-    ├── img3.jpg
-    └── img...
+        └── script.js    # Arquivo de scripts JavaScript
+│
+└── img                  # Diretório para imagens usadas no site
+    ├── img1.jpg         # Exemplo de imagem
+    ├── img2.jpg         # Exemplo de imagem
+    ├── img3.jpg         # Exemplo de imagem
+    └── img...           # Outras imagens
