@@ -1,2 +1,5 @@
-# Arquivos de configuração sensíveis
+__pycache__/
+*.pyc
+instance/
 .env
+.vscode/
